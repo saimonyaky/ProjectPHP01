@@ -5,8 +5,7 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Top Navigation
-          <small>Example 2.0</small>
+          Admin System
         </h1>
       </section>
 
