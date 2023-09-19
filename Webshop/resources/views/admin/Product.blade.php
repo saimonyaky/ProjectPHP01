@@ -5,7 +5,7 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Danh mục sản phẩm
+          Danh sách sản phẩm
         </h1>
       </section>
       <!-- Main content -->
@@ -13,31 +13,44 @@
         <div class="row">
           <div class="col-xs-12">
             <div class="box">
-              <form action="{{route('category')}}" method="get">
+              <form action="#" method="get">
                 <div class="input-group box-body">
-                  <input type="text" name="search" class="form-control" placeholder="Tìm kiếm">
+                  <input type="text" name="q" class="form-control" placeholder="Search...">
                   <span class="input-group-btn">
-                        <button type="submit" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                        <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
                         </button>
                       </span>
                 </div>
               </form>
+              <div class="form-group col-sm-4 box-body">
+                <label>Loại sản phẩm</label>
+                <select class="form-control select2" style="width: 100%;">
+                  <option selected="selected">Tất cả</option>
+                  @foreach ($dataCategory as $key => $val)
+                  <option>{{$val['name']}}</option>
+                  @endforeach
+                </select>
+              </div>
               <!-- /.box-header -->
               <div class="box-body">
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
                     <th style="width: 15px">STT</th>
-                    <th>Tên danh mục</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Số lượng</th>
+                    <th>Giá</th>
                     <th style="width: 200px">Tác vụ</th>
                   </tr>
                   </thead>
                   <tbody>
-                    @if($data != null)
+                    @if($data)
                     @foreach ($data as $key => $val)
                     <tr>
                       <td>{{$key+1}}</td>
                       <td>{{$val['name']}}</td>
+                      <td>{{$val['stock']}}</td>
+                      <td>{{$val['price']}}</td>
                       <td>
                         <button type="button" class="btn btn-info">Xem</button>
                         <button type="button" class="btn btn-danger">Sửa</button>
