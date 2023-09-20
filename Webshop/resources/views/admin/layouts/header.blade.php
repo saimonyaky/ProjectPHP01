@@ -11,9 +11,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class=""><a href="{{route('category')}}">Category</a></li>
-            <li class=""><a href="{{route('product')}}">Product</a></li>
-            <li><a href="#">User</a></li>
+            <li><a href="{{route('category')}}">Category</a></li>
+            <li><a href="{{route('product')}}">Product</a></li>
+            <li><a href="{{route('user')}}">User</a></li>
           </ul>
           <form class="navbar-form navbar-left" role="search">
             <div class="form-group">

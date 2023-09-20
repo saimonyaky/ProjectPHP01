@@ -5,7 +5,7 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Danh sách sản phẩm
+          Danh sách người dùng
         </h1>
       </section>
       <!-- Main content -->
@@ -22,24 +22,14 @@
                       </span>
                 </div>
               </form>
-              <div class="form-group col-sm-4 box-body">
-                <label>Loại sản phẩm</label>
-                <select class="form-control select2" style="width: 100%;">
-                  <option selected="selected">Tất cả</option>
-                  @foreach ($dataCategory as $key => $val)
-                  <option>{{$val['name']}}</option>
-                  @endforeach
-                </select>
-              </div>
               <!-- /.box-header -->
               <div class="box-body">
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
                     <th style="width: 15px">STT</th>
-                    <th>Tên sản phẩm</th>
-                    <th>Số lượng</th>
-                    <th>Giá</th>
+                    <th>Tên người dùng</th>
+                    <th>email</th>
                     <th style="width: 200px">Tác vụ</th>
                   </tr>
                   </thead>
@@ -49,8 +39,7 @@
                     <tr>
                       <td>{{$key+1}}</td>
                       <td>{{$val['name']}}</td>
-                      <td>{{$val['stock']}}</td>
-                      <td>{{$val['price']}}</td>
+                      <td>{{$val['email']}}</td>
                       <td>
                         <button type="button" class="btn btn-info">Xem</button>
                         <button type="button" class="btn btn-danger">Sửa</button>
