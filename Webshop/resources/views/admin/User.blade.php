@@ -8,20 +8,22 @@
           Danh sách người dùng
         </h1>
       </section>
+      <div class="box-body">
+        <form action="{{route('adminCategory')}}" method="get">
+          <div class="input-group box-body">
+            <input type="text" name="search" class="form-control" placeholder="Tìm kiếm">
+            <span class="input-group-btn">
+                  <button type="submit" id="search-btn" class="btn btn-default"><i class="fa fa-search"></i>
+                  </button>
+                </span>
+          </div>
+        </form>
+      </div>
       <!-- Main content -->
       <section class="content">
         <div class="row">
           <div class="col-xs-12">
             <div class="box">
-              <form action="#" method="get">
-                <div class="input-group box-body">
-                  <input type="text" name="search" class="form-control" placeholder="Search...">
-                  <span class="input-group-btn">
-                        <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                        </button>
-                      </span>
-                </div>
-              </form>
               <!-- /.box-header -->
               <div class="box-body">
                 <table id="example1" class="table table-bordered table-striped">

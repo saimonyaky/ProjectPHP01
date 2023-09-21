@@ -8,20 +8,23 @@
           Danh sách sản phẩm
         </h1>
       </section>
+      <div class="box-body">
+        <form action="{{route('adminCategory')}}" method="get">
+          <div class="input-group box-body">
+            <input type="text" name="search" class="form-control" placeholder="Tìm kiếm">
+            <span class="input-group-btn">
+                  <button type="submit" id="search-btn" class="btn btn-default"><i class="fa fa-search"></i>
+                  </button>
+                </span>
+          </div>
+        </form>
+      </div>
       <!-- Main content -->
       <section class="content">
         <div class="row">
           <div class="col-xs-12">
             <div class="box">
-              <form action="#" method="get">
-                <div class="input-group box-body">
-                  <input type="text" name="search" class="form-control" placeholder="Search...">
-                  <span class="input-group-btn">
-                        <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                        </button>
-                      </span>
-                </div>
-              </form>
+              <div class="col-3 box-body"><a type="button" class="btn btn-info" href="#">Thêm mới sản phẩm</a></div>  
               <div class="form-group col-sm-4 box-body">
                 <label>Loại sản phẩm</label>
                 <select class="form-control select2" style="width: 100%;">

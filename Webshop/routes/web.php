@@ -17,11 +17,12 @@ Route::get('/', function () {
 */
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/admins', 'AdminController@index')->name('admins');
-Route::get('/category', 'CategoryController@index')->name('category');
-Route::get('/product', 'ProductController@index')->name('product');
-Route::get('/user', 'UserController@index')->name('user');
+Route::prefix('admins')->group(function () {
+    Route::get('/', 'Admin\HomeController@index')->name('indexAdmin');
+    Route::resource('/category', 'Admin\CategoryController');
+    Route::resource('/product', 'Admin\ProductController');
+    Route::resource('/user', 'Admin\UserController');
+});
 Route::prefix('/')->group(function () {
     Route::get('Trang-chu', 'User\HomeController@index');
 

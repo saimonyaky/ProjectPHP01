@@ -2,7 +2,7 @@
     <nav class="navbar navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="{{route('admins')}}" class="navbar-brand"><b>Admin</b></a>
+          <a href="{{route('indexAdmin')}}" class="navbar-brand"><b>Admin</b></a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <i class="fa fa-bars"></i>
           </button>
@@ -11,9 +11,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="{{route('category')}}">Category</a></li>
-            <li><a href="{{route('product')}}">Product</a></li>
-            <li><a href="{{route('user')}}">User</a></li>
+            <li><a href="{{route('category.index')}}">Category</a></li>
+            <li><a href="{{route('product.index')}}">Product</a></li>
+            <li><a href="{{route('user.index')}}">User</a></li>
           </ul>
           <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
@@ -67,7 +67,7 @@
                     <a href="#" class="btn btn-default btn-flat">Profile</a>
                   </div>
                   <div class="pull-right">
-                    <a href="{{route('home')}}" class="btn btn-default btn-flat">Sign out</a>
+                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
                   </div>
                 </li>
               </ul>
