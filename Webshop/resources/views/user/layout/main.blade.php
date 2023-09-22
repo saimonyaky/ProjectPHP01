@@ -59,7 +59,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 </head>
 <body>
+    <!---//header---->
 @include('user.layout.header')
+
   <!---->
 <div data-vide-bg="video/video">
     <div class="container">
@@ -85,14 +87,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- smooth scrolling -->
 	<script type="text/javascript">
 		$(document).ready(function() {
-		/*
-			var defaults = {
-			containerID: 'toTop', // fading element id
-			containerHoverID: 'toTopHover', // fading element hover id
-			scrollSpeed: 1200,
-			easingType: 'linear' 
-			};
-		*/								
+							
 		$().UItoTop({ easingType: 'easeOutQuart' });
 		});
 	</script>
