@@ -96,7 +96,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			
 		</div>
 		<div class="col-md-4 kic-top1">
-			<a href="single - pc3.html">
+			<a href="single - pc1.html">
 				<img src="images/ki.jpg" class="img-responsive" alt="">
 			</a>
 			<h6>GIGABYTE Z390 AORUS Xtreme Waterforce LGA1151v2</h6>
