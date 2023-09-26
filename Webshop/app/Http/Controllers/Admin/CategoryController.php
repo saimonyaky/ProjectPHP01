@@ -28,7 +28,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        return view('admin.category.form');
+        return view('admin.category.create');
     }
 
     /**
@@ -39,6 +39,12 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'name'=>'required|unique:categories'
+        ],[
+            'name.required'=>'Tên danh mục không được để trống',
+            'name.unique'=>'Tên danh mục này bị trùng'
+        ]);
         $category = new Category();
         $category->name = $request->name;
         $category->slug = str_slug($request->name);
@@ -54,7 +60,8 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-        //
+        $data = Category::find($id);
+        return view('admin.category.show',compact('data'));
     }
 
     /**
@@ -65,7 +72,8 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = Category::find($id);
+        return view('admin.category.edit',compact('data'));
     }
 
     /**
@@ -77,7 +85,17 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'name'=>'required|unique:categories'
+        ],[
+            'name.required'=>'Tên danh mục không được để trống',
+            'name.unique'=>'Tên danh mục này bị trùng'
+        ]);
+        $category = Category::findorFail($id);
+        $category->name = $request->input('name');
+        $category->slug = str_slug($request->input('name'));
+        $category->save();
+        return redirect()->route('category.index')->with('mess','Sửa thành công');
     }
 
     /**

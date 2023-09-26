@@ -14,12 +14,8 @@
             <li><a href="{{route('category.index')}}">Category</a></li>
             <li><a href="{{route('product.index')}}">Product</a></li>
             <li><a href="{{route('user.index')}}">User</a></li>
+            <li><a href="">Order</a></li>
           </ul>
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search">
-            </div>
-          </form>
         </div>
         <!-- /.navbar-collapse -->
         <!-- Navbar Right Menu -->
@@ -43,29 +39,11 @@
 
                   <p>
                     Alexander Pierce - Web Developer
-                    <small>Member since Nov. 2012</small>
                   </p>
                 </li>
                 <!-- Menu Body -->
-                <li class="user-body">
-                  <div class="row">
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Followers</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Sales</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Friends</a>
-                    </div>
-                  </div>
-                  <!-- /.row -->
-                </li>
                 <!-- Menu Footer-->
                 <li class="user-footer">
-                  <div class="pull-left">
-                    <a href="#" class="btn btn-default btn-flat">Profile</a>
-                  </div>
                   <div class="pull-right">
                     <a href="#" class="btn btn-default btn-flat">Sign out</a>
                   </div>

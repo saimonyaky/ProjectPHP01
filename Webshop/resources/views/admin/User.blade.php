@@ -9,7 +9,7 @@
         </h1>
       </section>
       <div class="box-body">
-        <form action="{{route('adminCategory')}}" method="get">
+        <form action="{{route('user.index')}}" method="get">
           <div class="input-group box-body">
             <input type="text" name="search" class="form-control" placeholder="Tìm kiếm">
             <span class="input-group-btn">
@@ -44,8 +44,8 @@
                       <td>{{$val['email']}}</td>
                       <td>
                         <button type="button" class="btn btn-info">Xem</button>
-                        <button type="button" class="btn btn-danger">Sửa</button>
-                        <button type="button" class="btn btn-warning">Xóa</button>
+                        <button type="button" class="btn btn-warning">Sửa</button>
+                        <button type="button" class="btn btn-danger">Xóa</button>
                       </td>
                     </tr>
                     @endforeach

@@ -18,10 +18,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::prefix('admins')->group(function () {
-    Route::get('/', 'Admin\HomeController@index')->name('indexAdmin');
-    Route::resource('/category', 'Admin\CategoryController');
-    Route::resource('/product', 'Admin\ProductController');
-    Route::resource('/user', 'Admin\UserController');
+    Route::get('/', 'Admin\LoginController@index')->name('adminLogin');
+    Route::post('index', 'Admin\LoginController@login')->name('loginProcess');
+    Route::get('index', 'Admin\HomeController@index')->name('indexAdmin');
+    Route::resource('category', 'Admin\CategoryController');
+    Route::resource('product', 'Admin\ProductController');
+    Route::resource('user', 'Admin\UserController');
 });
 Route::prefix('/')->group(function () {
     Route::get('Trang-chu', 'User\HomeController@index');
