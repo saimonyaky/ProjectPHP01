@@ -64,7 +64,7 @@ class ProductController extends Controller
             //đặt tên
             $filename = time().''.$file->getClientOriginalName();
             //đặt đường dẫn
-            $filepath = 'img/products/';
+            $filepath = 'img/product/';
             $request->file('image')->move($filepath,$filename);
             $product->image = $filepath.$filename;
         }
@@ -131,7 +131,7 @@ class ProductController extends Controller
             //đặt tên
             $filename = time().'_'.$file->getClientOriginalName();
             //đặt đường dẫn
-            $filepath = 'img/products/';
+            $filepath = 'img/product/';
             $request->file('new_image')->move($filepath,$filename);
             $product->image = $filepath.$filename;
         }
