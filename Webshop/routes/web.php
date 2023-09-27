@@ -21,9 +21,9 @@ use App\Http\Controllers\HomeController;
 Auth::routes();
 
 Route::prefix('admins')->group(function () {
-    Route::get('/', 'Admin\LoginController@index')->name('adminLogin');
-    Route::post('index', 'Admin\LoginController@login')->name('loginProcess');
-    Route::get('index', 'Admin\HomeController@index')->name('indexAdmin');
+    Route::get('/', 'Admin\AuthController@index')->name('adminLogin');
+    Route::post('index', 'Admin\AuthController@login')->name('loginProcess');
+    Route::middleware('auth.admin')->get('index', 'Admin\HomeController@index')->name('indexAdmin');
     Route::resource('category', 'Admin\CategoryController');
     Route::resource('product', 'Admin\ProductController');
     Route::resource('user', 'Admin\UserController');

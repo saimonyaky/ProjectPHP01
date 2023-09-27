@@ -52,6 +52,9 @@
                         {{$message}}
                     @enderror</span>
                 </div>
+                @if (session()->has('fail'))
+                    <div class="alert alert-danger">{{session()->get('fail')}}</div>
+                @endif
                 <div class="row">
                     <div class="col-xs-8">
                     </div>
