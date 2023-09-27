@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 */
+
+use App\Http\Controllers\HomeController;
+
 Auth::routes();
 
 Route::prefix('admins')->group(function () {
@@ -28,4 +31,6 @@ Route::prefix('admins')->group(function () {
 Route::prefix('/')->group(function () {
     Route::get('Trang-chu', 'User\HomeController@index');
 
+    Route::get('login','User\HomeController@login');
+    Route::get('registration','User\HomeController@registration');
     });
