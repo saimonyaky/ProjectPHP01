@@ -31,6 +31,7 @@ Route::prefix('admins')->group(function () {
 Route::prefix('/')->group(function () {
     Route::get('Trang-chu', 'User\HomeController@index');
 
-    Route::get('login','User\HomeController@login');
-    Route::get('registration','User\HomeController@registration');
+    Route::get('login','User\HomeController@login')->name('loginUser');
+    Route::get('register','User\HomeController@register')->name('registerUser');
+    Route::post('register','User\HomeController@registerUser')->name('registerProcess');
     });

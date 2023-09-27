@@ -10,7 +10,6 @@
 				<span><i></i></span>
 				<b class="line"></b>
 			</div>
-		</div>
 			<div class="tab-head ">
 				<nav class="nav-sidebar">
 					<ul class="nav tabs ">
@@ -689,4 +688,4 @@
 					 </div>
 	</div>
 </div>
-@endsection
+ 

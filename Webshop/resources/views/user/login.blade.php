@@ -69,8 +69,8 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			</div>
 			<div class="head-t">
 				<ul class="card">
-					<li><a href="login.html" ><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
-					<li><a href="register.html" ><i class="fa fa-arrow-right" aria-hidden="true"></i>Register</a></li>	
+					<li><a href="{{route('loginUser')}}" ><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
+					<li><a href="{{route('registerUser')}}" ><i class="fa fa-arrow-right" aria-hidden="true"></i>Register</a></li>	
 				</ul>	
 			</div>
 		</div>
@@ -135,9 +135,8 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<div class="col-md-3 footer-grid">
 			<h3>My Account</h3>
 			<ul>
-				<li><a href="login.html">Login</a></li>
-				<li><a href="register.html">Register</a></li>
-				<li><a href="wishlist.html">Wishlist</a></li>
+				<li><a href="{{route('loginUser')}}">Login</a></li>
+				<li><a href="{{route('registerUser')}}">Register</a></li>
 				
 			</ul>
 		</div>

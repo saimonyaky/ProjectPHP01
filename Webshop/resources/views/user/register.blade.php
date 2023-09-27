@@ -77,8 +77,8 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
             </div>
             <div class="head-t">
                 <ul class="card">
-                    <li><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
-                    <li><a href="register.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Register</a></li>
+                    <li><a href="{{route('loginUser')}}"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
+                    <li><a href="{{route('registerUser')}}"><i class="fa fa-arrow-right" aria-hidden="true"></i>Register</a></li>
                 </ul>
             </div>
 
@@ -89,33 +89,35 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
         <div class="main-agileits">
             <div class="form-w3agile form1">
                 <h3>Register New Account</h3>
-                <form action="#" method="post">
-                    <div class="key">
+                <form action="{{route('registerProcess')}}" method="post">
+					@csrf
+					@if(Session()->has('success'))
+					<div class="alert alert-success">{{Session()->get('success')}}</div>
+					@endif
+					@if(Session()->has('fail'))
+					<div class="alert alert-danger">{{Session()->get('fail')}}</div>
+                    @endif
+					<div class="key">
                         <i class="fa fa-user" aria-hidden="true"></i>
-                        <input type="text" value="Username" name="Username" onfocus="this.value = '';"
-                            onblur="if (this.value == '') {this.value = 'Username';}" required="">
+                        <input type="text" placeholder="Username" name="username">
                         <div class="clearfix"></div>
                     </div>
                     <div class="key">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <input type="text" value="Email" name="Email" onfocus="this.value = '';"
-                            onblur="if (this.value == '') {this.value = 'Email';}" required="">
+                        <input type="text" placeholder="Email" name="email">
                         <div class="clearfix"></div>
                     </div>
                     <div class="key">
                         <i class="fa fa-lock" aria-hidden="true"></i>
-                        <input type="password" value="Password" name="Password" onfocus="this.value = '';"
-                            onblur="if (this.value == '') {this.value = 'Password';}" required="">
+                        <input type="password" placeholder="Password" name="password">
                         <div class="clearfix"></div>
                     </div>
                     <div class="key">
                         <i class="fa fa-lock" aria-hidden="true"></i>
-                        <input type="password" value="Confirm Password" name="Confirm Password"
-                            onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Confirm Password';}"
-                            required="">
+                        <input type="password" placeholder="Confirm Password" name="confirm_password">
                         <div class="clearfix"></div>
                     </div>
-                    <input type="submit" value="Submit">
+                    <button type="submit">Đăng ký</button>
                 </form>
             </div>
 
