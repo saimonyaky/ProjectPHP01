@@ -8,11 +8,22 @@
 			</div>
 			<div class="head-t">
 				<ul class="card">
-
-					<li><a href="{{route('loginUser')}}" ><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
-					<li><a href="{{route('registerUser')}}" ><i class="fa fa-arrow-right" aria-hidden="true"></i>Register</a></li>
+				@guest
+					<li><a href="{{route('login')}}" ><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
+					<li><a href="{{route('register')}}" ><i class="fa fa-arrow-right" aria-hidden="true"></i>Register</a></li>
+				@else
 					<li><a href="about.html" ><i class="fa fa-file-text-o" aria-hidden="true"></i>Order History</a></li>
+					<li><a class="dropdown-item" href="{{ route('logout') }}"
+							   onclick="event.preventDefault();
+											 document.getElementById('logout-form').submit();">
+								{{ __('Logout') }}
+							</a>
 
+							<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+								@csrf
+							</form>
+					</li>
+				@endguest
 				</ul>	
 			</div>
 			

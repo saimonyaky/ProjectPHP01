@@ -510,19 +510,19 @@ span.fa.fa-shopping-cart.my-cart-icon {
     -ms-transition: 0.5s all;
 }
  ::-webkit-input-placeholder{
-	color:#fff;
+	color:lightgray;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #fff; 
+   color: lightgray; 
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #fff;  
+   color: lightgray;  
 }
 
 :-ms-input-placeholder {  
-   color: #fff;  
+   color: lightgray;  
 }
 /*-- //to-top --*/
 .spec {
