@@ -15,7 +15,7 @@ class UserController extends Controller
      */
     function index(Request $request)
     {
-        $data = User::where('name','like','%'.$request->search.'%')
+        $data = User::where('name','like','%'.$request->search.'%')->Where('name','<>','admin')
         ->paginate(10);
         return view('admin.user',compact('data'));
     }

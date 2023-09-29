@@ -23,19 +23,19 @@ class AuthController extends Controller
             'email.email'=>'Email không đúng định dạng',
             'passWord.required'=>'Mật khẩu không được để trống'
         ]);
-        $admin = User::where('name','=','%admin%','and','email','=',$request->email)->first();
+        $admin = User::where('name','=','admin')->where('email','=',$request->email)->first();
         if($admin && Hash::check($request->passWord, $admin->password)){
-            $request->session()->put('loginId',$admin->id);
-            return redirect()->route('loginAdmin');
+            $request->session()->put('logged',$admin->id);
+            return redirect()->route('indexAdmin');
         }else{
             return back()->with('fail','Email hoặc mật khẩu không chính xác!');
         }
     }
     function logout()
     {
-        if(session()->has('loginId')){
-            session()->pull('loginId');
-            return redirect('loginAdmin');
+        if(session()->has('logged')){
+            session()->pull('logged');
+            return redirect()->route('adminLogin');
         }
     }
 }

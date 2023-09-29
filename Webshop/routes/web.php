@@ -20,9 +20,10 @@ use App\Http\Controllers\HomeController;
 Auth::routes();
 
 Route::prefix('admins')->group(function () {
-    Route::get('/', 'Admin\AuthController@index')->name('adminLogin');
+    Route::middleware('auth.logged')->get('login', 'Admin\AuthController@index')->name('adminLogin');
     Route::post('index', 'Admin\AuthController@login')->name('loginProcess');
-    Route::middleware('auth.admin')->get('index', 'Admin\HomeController@index')->name('indexAdmin');
+    Route::get('logout', 'Admin\AuthController@logout')->name('adminLogout');
+    Route::middleware('auth.admin')->get('/', 'Admin\HomeController@index')->name('indexAdmin');
     Route::middleware('auth.admin')->resource('category', 'Admin\CategoryController');
     Route::middleware('auth.admin')->resource('product', 'Admin\ProductController');
     Route::middleware('auth.admin')->resource('user', 'Admin\UserController');
