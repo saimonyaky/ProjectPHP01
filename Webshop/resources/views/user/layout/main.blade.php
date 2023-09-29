@@ -60,30 +60,18 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 </head>
 <body>
     <!---//header---->
-@include('user.layout.header')
+	
+
 
   <!---->
-<div data-vide-bg="video/video">
-    <div class="container">
-		<div class="banner-info">
-			<h3>A Trusted Place For Technology Enthusiasts</h3>	
-			<div class="search-form">
-				<form action="#" method="post">
-					<input type="text" placeholder="Search..." name="Search...">
-					<input type="submit" value=" " >
 
-				</form>
-			</div>		
-		</div>	
-    </div>
-</div>
 
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
     <script src="js/jquery.vide.min.js"></script>
 
     @yield('content')
 <!-- //footer-->
-
+@include('user.layout.footer')
 <!-- smooth scrolling -->
 	<script type="text/javascript">
 		$(document).ready(function() {

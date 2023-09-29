@@ -82,14 +82,7 @@
 										
 										</div>
 										<div class="col-sm-3">
-										
-											<!--<ul class="multi-column-dropdown">
-												<li><a href="pccomponent.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Pickle & Condiment</a></li>
-												<li><a href="pccomponent.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Instant Food</a></li>
-												<li><a href="pccomponent.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Dry Fruit</a></li>
-												<li><a href="pccomponent.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Tea &amp; Coffee</a></li>
-										
-											</ul>-->
+
 										</div>
 										<div class="col-sm-3 w3l">
 											<a href="pccomponent.html"><img src="images/me.png" class="img-responsive" alt=""></a>
@@ -107,9 +100,7 @@
 											<ul class="multi-column-dropdown">
 												<li><a href="gaminggear.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Monitor</a></li>
 												<li><a href="gaminggear.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Keyboard</a></li>
-												<!--<li><a href="gaminggear.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Mouse </a></li>
-												<li><a href="gaminggear.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Headset </a></li>-->
-										
+	
 											</ul>
 											
 										</div>
@@ -118,21 +109,11 @@
 											<ul class="multi-column-dropdown">
 												<li><a href="gaminggear.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Mouse</a></li>
 												<li><a href="gaminggear.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Headset</a></li>
-												<!--<li><a href="gaminggear.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Personal Hygiene</a></li>
-												<li><a href="gaminggear.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Skin care</a></li>-->
-										
-											</ul>
+
 											
 										</div>
 										<div class="col-sm-3">
-											
-											<!--<ul class="multi-column-dropdown">
-												<li><a href="gaminggear.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Fashion Accessories </a></li>
-												<li><a href="gaminggear.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Grooming Tools</a></li>
-												<li><a href="gaminggear.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Shaving Need</a></li>
-												<li><a href="gaminggear.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Sanitary Needs</a></li>
-										
-											</ul>-->
+
 										</div>
 										<div class="col-sm-3 w3l">
 											<a href="gaminggear.html"><img src="images/me1.png" class="img-responsive" alt=""></a>
@@ -149,9 +130,7 @@
 											<ul class="multi-column-dropdown">
 												<li><a href="console.html"><i class="fa fa-angle-right" aria-hidden="true"></i>SONY Play Station 4</a></li>
 												<li><a href="console.html"><i class="fa fa-angle-right" aria-hidden="true"></i>PS4 Controller</a></li>
-												<!--<li><a href="console.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Detergents</a></li>
-												<li><a href="console.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Gardening Needs</a></li>-->
-										
+
 											</ul>
 										
 										</div>
@@ -160,21 +139,12 @@
 											<ul class="multi-column-dropdown">
 												<li><a href="console.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Microsoft XBOX One</a></li>
 												<li><a href="console.html"><i class="fa fa-angle-right" aria-hidden="true"></i>XBOX Controller</a></li>
-												<!--<li><a href="console.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Pet Care</a></li>
-												<li><a href="console.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Plastic Wear</a></li>-->
-										
+
 											</ul>
 										
 										</div>
 										<div class="col-sm-3">
-										
-											<!--<ul class="multi-column-dropdown">
-												<li><a href="console.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Pooja Needs</a></li>
-												<li><a href="console.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Serveware</a></li>
-												<li><a href="console.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Safety Accessories</a></li>
-												<li><a href="console.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Festive Decoratives </a></li>
-										
-											</ul>-->
+
 										</div>
 										<div class="col-sm-3 w3l">
 											<a href="console.html"><img src="images/me2.png" class="img-responsive" alt=""></a>
@@ -183,8 +153,7 @@
 									</div>	
 								</ul>
 							</li>
-							
-							<!--<li><a href="codes.html" class="hyper"> <span>Code</span></a></li>-->
+
 							<li><a href="contact.html" class="hyper"><span>Contact Us</span></a></li>
 						</ul>
 					</div>

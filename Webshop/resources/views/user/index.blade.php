@@ -1,5 +1,28 @@
 @extends('user.layout.main')
 @section('content')
+
+
+@section('header')
+   @include('user.layout.header')
+@endsection  
+ 
+@endsection
+@include('user.layout.header')
+<div data-vide-bg="video/video">
+    <div class="container">
+		<div class="banner-info">
+			<h3>A Trusted Place For Technology Enthusiasts</h3>	
+			<div class="search-form">
+				<form action="#" method="post">
+					<input type="text" placeholder="Search..." name="Search...">
+					<input type="submit" value=" " >
+
+				</form>
+			</div>		
+		</div>	
+    </div>
+</div>
+
 <!--content-->
 <div class="content-top ">
 	<div class="container ">
