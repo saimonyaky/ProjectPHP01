@@ -51,7 +51,7 @@
                                                     <td>
                                                         <a href="{{route('category.show',$val->id)}}" type="button" class="btn btn-info">Xem</a>
                                                         <a href="{{route('category.edit',$val->id)}}" type="button" class="btn btn-warning">Sửa</a>
-                                                        <button type="button" class="btn btn-danger">Xóa</button>
+                                                        <a href="{{route('category.destroy',$val->id)}}" onclick="if(confirm('Bạn có chắc không?'))return true;else return false;" type="button" class="btn btn-danger">Xóa</a>
                                                     </td>
                                                 </tr>
                                             @endforeach

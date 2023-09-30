@@ -10,15 +10,15 @@
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="{{url('')}}/css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="{{url('')}}/css/style.css" rel='stylesheet' type='text/css' />
 <!-- js -->
-   <script src="js/jquery-1.11.1.min.js"></script>
+   <script src="{{url('')}}/js/jquery-1.11.1.min.js"></script>
 <!-- //js -->
 <!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="{{url('')}}/js/move-top.js"></script>
+<script type="text/javascript" src="{{url('')}}/js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -28,12 +28,12 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	});
 </script>
 <!-- start-smoth-scrolling -->
-<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="{{url('')}}/css/font-awesome.css" rel="stylesheet"> 
 <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 <!--- start-rate---->
-<script src="js/jstarbox.js"></script>
-	<link rel="stylesheet" href="css/jstarbox.css" type="text/css" media="screen" charset="utf-8" />
+<script src="{{url('')}}/js/jstarbox.js"></script>
+	<link rel="stylesheet" href="{{url('')}}/css/jstarbox.css" type="text/css" media="screen" charset="utf-8" />
 		<script type="text/javascript">
 			jQuery(function() {
 			jQuery('.starbox').each(function() {
@@ -60,14 +60,14 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 </head>
 <body>
     <!---//header---->
-	
+	@include('user.layout.header')
 
 
   <!---->
 
 
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-    <script src="js/jquery.vide.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="{{url('')}}/js/jquery.vide.min.js"></script>
 
     @yield('content')
 <!-- //footer-->
@@ -82,9 +82,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 <!-- //smooth scrolling -->
 <!-- for bootstrap working -->
-		<script src="js/bootstrap.js"></script>
+		<script src="{{url('')}}/js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
-<script type='text/javascript' src="js/jquery.mycart.js"></script>
+<script type='text/javascript' src="{{url('')}}/js/jquery.mycart.js"></script>
   <script type="text/javascript">
   $(function () {
 

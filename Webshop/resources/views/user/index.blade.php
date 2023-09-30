@@ -1,13 +1,6 @@
 @extends('user.layout.main')
 @section('content')
-
-
-@section('header')
-   @include('user.layout.header')
-@endsection  
- 
-@endsection
-@include('user.layout.header')
+@include('user.layout.navbar')
 <div data-vide-bg="video/video">
     <div class="container">
 		<div class="banner-info">
@@ -711,4 +704,4 @@
 					 </div>
 	</div>
 </div>
- 
+@endsection
