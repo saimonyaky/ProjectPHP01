@@ -29,10 +29,7 @@ Route::prefix('admins')->group(function () {
     Route::middleware('auth.admin')->resource('user', 'Admin\UserController');
 });
 Route::prefix('/')->group(function () {
-    Route::get('/', 'User\HomeController@index');
-    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/', 'User\HomeController@index')->name('home');
+    Route::get('gaminggear', 'User\HomeController@gaminggear')->name('gaminggear');
 
-    // Route::get('login','User\HomeController@login')->name('loginUser');
-    // Route::get('register','User\HomeController@register')->name('registerUser');
-    // Route::post('register','User\HomeController@registerUser')->name('registerProcess');
     });

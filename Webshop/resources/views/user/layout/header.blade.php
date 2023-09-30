@@ -2,7 +2,7 @@
 <div class="header">
     <div class="container">
         <div class="logo">
-            <h1><a href="index.html"><b>V<br>N<br>U<br>A</b>VNUA Computer Store<span>Best Place For Building Your
+            <h1><a href="{{route('home')}}"><b>V<br>N<br>U<br>A</b>VNUA Computer Store<span>Best Place For Building Your
                         PC</span></a></h1>
         </div>
         <div class="head-t">

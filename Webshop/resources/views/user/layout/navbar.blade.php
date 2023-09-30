@@ -12,7 +12,7 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
                 <ul class="nav navbar-nav ">
-                    <li class=" active"><a href="index.html" class="hyper "><span>Home</span></a></li>
+                    <li class=" active"><a href="{{route('home')}}" class="hyper "><span>Home</span></a></li>
 
                     <li class="dropdown ">
                         <a href="#" class="dropdown-toggle  hyper" data-toggle="dropdown"><span>PC Component<b
@@ -37,12 +37,6 @@
                                                     aria-hidden="true"></i>SSD</a></li>
                                         <li><a href="pccomponent.html"><i class="fa fa-angle-right"
                                                     aria-hidden="true"></i>HDD</a></li>
-                                        <li><a href="pccomponent.html"><i class="fa fa-angle-right"
-                                                    aria-hidden="true"></i>Power Supply</a></li>
-                                        <li><a href="pccomponent.html"><i class="fa fa-angle-right"
-                                                    aria-hidden="true"></i>PC Case</a></li>
-                                        <li><a href="pccomponent.html"><i class="fa fa-angle-right"
-                                                    aria-hidden="true"></i>Fan/Liquid Cooling</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-3">

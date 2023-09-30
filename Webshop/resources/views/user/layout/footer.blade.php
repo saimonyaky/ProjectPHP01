@@ -8,7 +8,7 @@
 		<div class="col-md-3 footer-grid ">
 			<h3>Menu</h3>
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="{{route('home')}}">Home</a></li>
 				<li><a href="pccomponent.html">PC Component</a></li>
 				<li><a href="gaminggear.html">Gaming Gear</a></li>
 				<li><a href="console.html">Console</a></li>						 
@@ -38,7 +38,7 @@
 		</div>
 		<div class="clearfix"></div>
 			<div class="footer-bottom">
-				<h2 ><a href="index.html"><b>V<br>N<br>U<br>A</b>VNUA Computer Store<span>Best Place For Building Your PC</span></a></h2>
+				<h2 ><a href="{{route('home')}}"><b>V<br>N<br>U<br>A</b>VNUA Computer Store<span>Best Place For Building Your PC</span></a></h2>
 				<p class="fo-para">VNUA Computer Store - Best place for buying Computer Components and Gaming Gears with a really low price.</p>
 				<ul class="social-fo">
 					<li><a href="#" class=" face"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
