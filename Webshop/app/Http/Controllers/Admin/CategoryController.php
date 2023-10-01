@@ -107,8 +107,6 @@ class CategoryController extends Controller
     public function destroy($id)
     {
         $category = Category::destroy($id);
-        dd($category);
-        $category->save();
         return redirect()->route('category.index')->with('mess','Xoá thành công');
     }
 }
