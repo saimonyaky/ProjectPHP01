@@ -1,4 +1,4 @@
-<a href="{{route('offer')}}"><img src="images/download.png" class="img-head" alt=""></a>
+<a href="offer.html"><img src="images/download.png" class="img-head" alt=""></a>
 <div class="header">
     <div class="container">
         <div class="logo">
@@ -12,7 +12,7 @@
                     <li><a href="{{ route('register') }}"><i class="fa fa-arrow-right" aria-hidden="true"></i>Đăng kí</a>
                     </li>
                 @else
-                    <li><a href="{{route('about')}}"><i class="fa fa-file-text-o" aria-hidden="true"></i>Order History</a></li>
+                    <li><a href="about.html"><i class="fa fa-file-text-o" aria-hidden="true"></i>Order History</a></li>
                     <li><a class="dropdown-item" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
 											 document.getElementById('logout-form').submit();">

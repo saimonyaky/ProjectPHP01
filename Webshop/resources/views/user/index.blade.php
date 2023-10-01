@@ -1,7 +1,7 @@
 @extends('user.layout.main')
 @section('content')
 @include('user.layout.navbar')
-<div data-vide-bg="img/banner/video">
+<div data-vide-bg="video/video">
     <div class="container">
 		<div class="banner-info">
 			<h3>A Trusted Place For Technology Enthusiasts</h3>	
@@ -9,6 +9,7 @@
 				<form action="#" method="post">
 					<input type="text" placeholder="Search..." name="Search...">
 					<input type="submit" value=" " >
+
 				</form>
 			</div>		
 		</div>	
@@ -437,8 +438,8 @@
 		
 		<div class="col-md-4 m-w3ls">
 			<div class="col-md1 ">
-				<a href="{{route('pccomponent')}}">
-					<img src="img/banner/co1.jpg" class="img-responsive img" alt="">
+				<a href="pccomponent.html">
+					<img src="images/co1.jpg" class="img-responsive img" alt="">
 					<div class="big-sa">
 						<h6>New Collections</h6>
 						<h3>Computer <span>Component</span></h3>
@@ -449,8 +450,8 @@
 		</div>
 		<div class="col-md-4 m-w3ls1">
 			<div class="col-md ">
-				<a href="{{route('console')}}">
-					<img src="img/banner/co.jpg" class="img-responsive img" alt="">
+				<a href="console.html">
+					<img src="images/co.jpg" class="img-responsive img" alt="">
 					<div class="big-sale">
 						<div class="big-sale1">
 							<h3>Big <span>Sale</span></h3>
@@ -462,8 +463,8 @@
 		</div>
 		<div class="col-md-4 m-w3ls">
 			<div class="col-md2 ">
-				<a href="{{route('pccomponent')}}">
-					<img src="img/banner/co2.jpg" class="img-responsive img1" alt="">
+				<a href="pccomponent.html">
+					<img src="images/co2.jpg" class="img-responsive img1" alt="">
 					<div class="big-sale2">
 						<h3>RAM <span>RGB</span></h3>
 						<p>High speed RAM with beautiful RGB LED.</p>		
@@ -471,8 +472,8 @@
 				</a>
 			</div>
 			<div class="col-md3 ">
-				<a href="{{route('pccomponent')}}">
-					<img src="img/banner/co3.jpg" class="img-responsive img1" alt="">
+				<a href="pccomponent.html">
+					<img src="images/co3.jpg" class="img-responsive img1" alt="">
 					<div class="big-sale3">
 						<h3>SSD <span>NVMe</span></h3>
 						<p>Large capacity Hard drive with extremely fast read and write speed.</p>
@@ -495,15 +496,15 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-         <a href="{{route('pccomponent')}}"> <img class="first-slide" src="img/banner/ba.jpg" alt="First slide"></a>
+         <a href="pccomponent.html"> <img class="first-slide" src="images/ba.jpg" alt="First slide"></a>
        
         </div>
         <div class="item">
-         <a href="{{route('gaminggear')}}"> <img class="second-slide " src="img/banner/ba1.jpg" alt="Second slide"></a>
+         <a href="gaminggear.html"> <img class="second-slide " src="images/ba1.jpg" alt="Second slide"></a>
          
         </div>
         <div class="item">
-          <a href="{{route('console')}}"><img class="third-slide " src="img/banner/ba2.jpg" alt="Third slide"></a>
+          <a href="console.html"><img class="third-slide " src="images/ba2.jpg" alt="Third slide"></a>
           
         </div>
       </div>

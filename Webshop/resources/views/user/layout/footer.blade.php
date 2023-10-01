@@ -9,28 +9,31 @@
 			<h3>Menu</h3>
 			<ul>
 				<li><a href="{{route('home')}}">Home</a></li>
-				<li><a href="{{route('pccomponent')}}">PC Component</a></li>
-				<li><a href="{{route('gaminggear')}}">Gaming Gear</a></li>
-				<li><a href="{{route('console')}}">Console</a></li>						 
+				<li><a href="pccomponent.html">PC Component</a></li>
+				<li><a href="gaminggear.html">Gaming Gear</a></li>
+				<li><a href="console.html">Console</a></li>						 
 				<!--<li><a href="codes.html">Short Codes</a></li>--> 
-				<li><a href="{{route('contact')}}">Contact Us</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
 			</ul>
 		</div>
 		<div class="col-md-3 footer-grid ">
 			<h3>Customer Services</h3>
 			<ul>
-				<li><a href="{{route('terms')}}">Terms & Conditions</a></li>
-				<li><a href="{{route('faqs')}}">FAQs</a></li>
-				<li><a href="{{route('contact')}}">Contact</a></li>
-				<li><a href="{{route('offer')}}">Online Shopping</a></li>						 
+				<li><a href="shipping.html">Shipping</a></li>
+				<li><a href="terms.html">Terms & Conditions</a></li>
+				<li><a href="faqs.html">FAQs</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="offer.html">Online Shopping</a></li>						 
 				 
 			</ul>
 		</div>
 		<div class="col-md-3 footer-grid">
 			<h3>My Account</h3>
 			<ul>
-				<li><a href="{{route('login')}}">Login</a></li>
-				<li><a href="{{route('register')}}">Register</a></li>			
+				<li><a href="login.html">Login</a></li>
+				<li><a href="register.html">Register</a></li>
+				<li><a href="wishlist.html">Wishlist</a></li>
+				
 			</ul>
 		</div>
 		<div class="clearfix"></div>
