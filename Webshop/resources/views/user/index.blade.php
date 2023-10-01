@@ -1,6 +1,6 @@
 @extends('user.layout.main')
 @section('content')
-    <<<<<<< Updated upstream @include('user.layout.navbar') <div data-vide-bg="video/video">
+ @include('user.layout.navbar') <div data-vide-bg="video/video">
         <div class="container">
             <div class="banner-info">
                 <h3>A Trusted Place For Technology Enthusiasts</h3>
@@ -12,23 +12,6 @@
                     </form>
                 </div>
             </div>
-            =======
-            @include('user.layout.navbar')
-            <div data-vide-bg="img/banner/video">
-                <div class="container">
-                    <div class="banner-info">
-                        <h3>A Trusted Place For Technology Enthusiasts</h3>
-                        <div class="search-form">
-                            <form action="#" method="post">
-                                <input type="text" placeholder="Search..." name="Search...">
-                                <input type="submit" value=" ">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                >>>>>>> Stashed changes
-            </div>
-
             <!--content-->
             <div class="content-top ">
                 <div class="container ">
