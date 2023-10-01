@@ -105,8 +105,6 @@
                                                         data-quantity="1" data-image="{{ $val['image'] }}">Add to
                                                         Cart</button>
                                                 </div>
-                                                >>>>>>> Stashed changes
-
                                             </div>
                                         </div>
                                     </div>
@@ -116,7 +114,7 @@
                         </div>
                         <div class="tab-pane  text-style" id="tab3">
                             <div class=" con-w3l">
-                                @foreach ($dataGear as $key => $val)
+                                @foreach ($dataCs as $key => $val)
                                     <div class="col-md-3 m-wthree">
                                         <div class="col-m">
                                             <a href="#" data-toggle="modal" data-target="#myModal1"
@@ -252,7 +250,7 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="add add-2">
-                                    <button class="btn btn-danger my-cart-btn my-cart-b" data-id="5"
+                                    <button class="btn btn-danger my-cart-btn my-cart-b" data-id="{{$val['id']}}"
                                         data-name="{{ $val['name'] }}" data-summary="summary 5"
                                         data-price="{{ $val['sale'] }}" data-quantity="1"
                                         data-image="{{ $val['image'] }}">Add to Cart</button>
