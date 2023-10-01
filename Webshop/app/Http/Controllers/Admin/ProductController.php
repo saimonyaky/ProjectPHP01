@@ -69,7 +69,7 @@ class ProductController extends Controller
             $product->image = $filepath.$filename;
         }
         $product->save();
-        return redirect()->route('category.index')->with('mess','Thêm thành công');
+        return redirect()->route('product.index')->with('mess','Thêm thành công');
     }
 
     /**

@@ -498,11 +498,11 @@ span.fa.fa-shopping-cart.my-cart-icon {
     height: 41px;
     outline: none;
     border: 1px solid #fff;
-    background: url(../images/can.png) no-repeat 6px 7px #FCCD1E;
+    background: url(../img/banner/can.png) no-repeat 6px 7px #FCCD1E;
     display: inline-block;
 }
 .search-form input[type='submit']:hover {
-    background: url(../images/can.png) no-repeat 6px 7px #039445;
+    background: url(../img/banner/can.png) no-repeat 6px 7px #039445;
         transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -1152,7 +1152,7 @@ ul.product-qty {
     width: 100%;
     height: 114px;
     display: block;
-    background: url(../images/sh.jpg)no-repeat ;
+    background: url(../img/banner/sh.jpg)no-repeat ;
     padding: 3em 0;
     background-size: cover;
 }
@@ -2888,7 +2888,11 @@ img.img-head {
 .search-form input[type='submit'] {
     width: 35px;
     height: 35px;
+<<<<<<< Updated upstream
     background: url(../images/can.png) no-repeat 4px 3px #FCCD1E;
+=======
+    background: url(../img/bannernner/can.png) no-repeat 4px 3px #FCCD1E;
+>>>>>>> Stashed changes
 }
 .search-form input[type='text'] {
     width: 85%;

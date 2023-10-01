@@ -4,7 +4,7 @@
 <div class="banner-top">
 	<div class="container">
 		<h3 >Contact</h3>
-		<h4><a href="index.html">Home</a><label>/</label>Contact</h4>
+		<h4><a href="{{route('home')}}">Home</a><label>/</label>Contact</h4>
 		<div class="clearfix"> </div>
 	</div>
 </div>

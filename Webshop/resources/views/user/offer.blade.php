@@ -1,29 +1,7 @@
 @extends('user.layout.main')
 @section('content')
     @include('user.layout.navbar')
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <a href="pccomponent.html"><img class="first-slide" src="images/ba.jpg" alt="First slide"></a>
-
-            </div>
-            <div class="item">
-                <a href="gaminggear.html"><img class="second-slide " src="images/ba1.jpg" alt="Second slide"></a>
-
-            </div>
-            <div class="item">
-                <a href="console.html"><img class="third-slide " src="images/ba2.jpg" alt="Third slide"></a>
-
-            </div>
-        </div>
-
-    </div>
+    @include('user.layout.carousel')
     <!--content-->
     <div class="content-top offer-w3agile">
         <div class="container ">

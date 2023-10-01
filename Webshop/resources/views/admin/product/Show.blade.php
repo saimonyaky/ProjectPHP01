@@ -29,7 +29,9 @@
                                 <div class="form-group box-body col-sm-4">
                                     <label for="exampleInputFile">Ảnh sản phẩm</label>
                                     @if ($data->image)
+                                    <p>
                                         <img src="{{ asset($data->image) }}" alt="">
+                                    </p>         
                                     @else
                                         <p>Không có ảnh</p>
                                     @endif

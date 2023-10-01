@@ -27,9 +27,29 @@ Route::prefix('admins')->group(function () {
     Route::middleware('auth.admin')->resource('category', 'Admin\CategoryController');
     Route::middleware('auth.admin')->resource('product', 'Admin\ProductController');
     Route::middleware('auth.admin')->resource('user', 'Admin\UserController');
+<<<<<<< Updated upstream
 });
 Route::prefix('/')->group(function () {
     Route::get('/', 'User\HomeController@index')->name('home');
     Route::get('gaminggear', 'User\HomeController@gaminggear')->name('gaminggear');
 
+=======
+    Route::middleware('auth.admin')->get('category/delete/{id}', 'Admin\CategoryController@destroy')->name('categoryDestroy');
+    Route::middleware('auth.admin')->get('product/delete/{id}', 'Admin\CategoryController@destroy')->name('productDestroy');
+    Route::middleware('auth.admin')->get('user/delete/{id}', 'Admin\CategoryController@destroy')->name('userDestroy');
+});
+Route::prefix('/')->group(function () {
+    Route::get('/', 'User\HomeController@index')->name('home');
+    Route::get('gaming-gear', 'User\HomeController@gaminggear')->name('gaminggear');
+    Route::get('contact', 'User\HomeController@contact')->name('contact');
+    Route::get('pc-component', 'User\HomeController@pccomponent')->name('pccomponent');
+    Route::get('console', 'User\HomeController@console')->name('console');
+    Route::get('about', 'User\HomeController@about')->name('about');
+    Route::get('terms', 'User\HomeController@terms')->name('terms');
+    Route::get('offer', 'User\HomeController@offer')->name('offer');
+    Route::get('single-gaming-gear', 'User\HomeController@single_gaminggear')->name('single_gaminggear');
+    Route::get('single-pc', 'User\HomeController@single_pc')->name('single_pc');
+    Route::get('single', 'User\HomeController@single')->name('single');
+    Route::get('faqs', 'User\HomeController@faqs')->name('faqs');
+>>>>>>> Stashed changes
     });

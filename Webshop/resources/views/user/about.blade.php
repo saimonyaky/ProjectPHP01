@@ -4,7 +4,7 @@
     <div class="banner-top">
         <div class="container">
             <h3>Your Order History</h3>
-            <h4><a href="index.html">Home</a><label>/</label>Order History</h4>
+            <h4><a href="{{route('home')}}">Home</a><label>/</label>Order History</h4>
             <div class="clearfix"> </div>
         </div>
     </div>
