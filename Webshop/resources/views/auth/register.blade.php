@@ -3,7 +3,7 @@
     <div class="login">
         <div class="main-agileits">
             <div class="form-w3agile form1">
-                <h3>Register New Account</h3>
+                <h3>Đăng kí</h3>
                 <form action="{{ route('register') }}" method="post">
                     @csrf
                     <div class="key">

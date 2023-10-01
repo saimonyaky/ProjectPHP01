@@ -3,7 +3,7 @@
     <div class="login">
         <div class="main-agileits">
             <div class="form-w3agile">
-                <h3>Login Your Account</h3>
+                <h3>Đăng nhập</h3>
                 <form action="{{ route('login') }}" method="post">
                     @csrf
                     <div class="key">
