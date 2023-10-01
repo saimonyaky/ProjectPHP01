@@ -27,13 +27,6 @@ Route::prefix('admins')->group(function () {
     Route::middleware('auth.admin')->resource('category', 'Admin\CategoryController');
     Route::middleware('auth.admin')->resource('product', 'Admin\ProductController');
     Route::middleware('auth.admin')->resource('user', 'Admin\UserController');
-<<<<<<< Updated upstream
-});
-Route::prefix('/')->group(function () {
-    Route::get('/', 'User\HomeController@index')->name('home');
-    Route::get('gaminggear', 'User\HomeController@gaminggear')->name('gaminggear');
-
-=======
     Route::middleware('auth.admin')->get('category/delete/{id}', 'Admin\CategoryController@destroy')->name('categoryDestroy');
     Route::middleware('auth.admin')->get('product/delete/{id}', 'Admin\CategoryController@destroy')->name('productDestroy');
     Route::middleware('auth.admin')->get('user/delete/{id}', 'Admin\CategoryController@destroy')->name('userDestroy');
@@ -51,5 +44,4 @@ Route::prefix('/')->group(function () {
     Route::get('single-pc', 'User\HomeController@single_pc')->name('single_pc');
     Route::get('single', 'User\HomeController@single')->name('single');
     Route::get('faqs', 'User\HomeController@faqs')->name('faqs');
->>>>>>> Stashed changes
     });

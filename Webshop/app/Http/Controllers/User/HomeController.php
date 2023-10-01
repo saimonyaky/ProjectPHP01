@@ -10,15 +10,11 @@ class HomeController extends Controller
 {    
     function index()
     {
-<<<<<<< Updated upstream
-        return view('user.index');
-=======
         $dataPc = Product::all()->where('category_id',68)->take(4);
         $dataGear = Product::all()->where('category_id',69)->take(4);
         $dataCs = Product::all()->where('category_id',67)->take(4);
         $dataTop = Product::all()->take(8);
         return view('user.index',compact('dataTop','dataPc','dataGear','dataCs'));
->>>>>>> Stashed changes
     }
     function gaminggear()
     {
@@ -26,8 +22,6 @@ class HomeController extends Controller
         $data = Product::all()->where('category_id',69);
         return view('user.gaminggear',compact('data','dataTop'));
     }
-<<<<<<< Updated upstream
-=======
     function contact()
     {
         return view('user.contact');
@@ -68,5 +62,4 @@ class HomeController extends Controller
     {
         return view('user.single');
     }
->>>>>>> Stashed changes
 }

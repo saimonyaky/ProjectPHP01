@@ -2888,11 +2888,7 @@ img.img-head {
 .search-form input[type='submit'] {
     width: 35px;
     height: 35px;
-<<<<<<< Updated upstream
-    background: url(../images/can.png) no-repeat 4px 3px #FCCD1E;
-=======
     background: url(../img/bannernner/can.png) no-repeat 4px 3px #FCCD1E;
->>>>>>> Stashed changes
 }
 .search-form input[type='text'] {
     width: 85%;
