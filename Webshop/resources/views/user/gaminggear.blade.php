@@ -36,9 +36,9 @@
 				<div class=" con-w3l agileinf">
 					@foreach($data as $key=>$val)
 					<div class="col-md-3 pro-1">
-						<div class="col-m">
-							<a href="#" data-toggle="modal" data-target="#myModal1" class="offer-img">
-								<img src="{{asset($val['image'])}}" class="img-responsive" alt=""> 	
+						<div class="col-m" style="height: 320px">
+							<a href="#" data-toggle="modal" data-target="#model{{$val['id']}}" class="offer-img">
+								<img src="{{asset($val['image'])}}" class="img-responsive" alt="" style="height: 125px"> 	
 							</a>
 							<div class="mid-1">
 								<div class="women">
@@ -63,3 +63,4 @@
 		</div>
 	</div>
 @endsection
+@include('user.layout.detail_product')

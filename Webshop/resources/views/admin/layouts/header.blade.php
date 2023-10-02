@@ -2,7 +2,7 @@
     <nav class="navbar navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="{{route('indexAdmin')}}" class="navbar-brand"><b>Admin</b></a>
+          <a href="{{route('indexAdmin')}}" class="navbar-brand"><b>Quản lí bán hàng</b></a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <i class="fa fa-bars"></i>
           </button>
@@ -28,7 +28,7 @@
               <!-- Menu Toggle Button -->
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <!-- The user image in the navbar-->
-                <img src="admin/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                <img src="{{url('')}}/admin/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                 <span class="hidden-xs">Alexander Pierce</span>
               </a>
@@ -38,7 +38,7 @@
                   <img src="admin/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                   <p>
-                    Alexander Pierce - Web Developer
+                    Quản lí bán hàng
                   </p>
                 </li>
                 <!-- Menu Body -->

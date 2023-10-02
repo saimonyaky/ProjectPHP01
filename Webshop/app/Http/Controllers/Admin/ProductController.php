@@ -148,7 +148,6 @@ class ProductController extends Controller
     public function destroy($id)
     {
         $product = Product::destroy($id);
-        $product->save();
         return redirect()->route('product.index')->with('mess','Xoá thành công');
     }
     public function order()

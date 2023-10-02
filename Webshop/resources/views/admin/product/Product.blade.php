@@ -33,7 +33,7 @@
                             <div class="col-sm-3 box-body"><a type="button" class="btn btn-info"
                                     href="{{ route('product.create') }}">Thêm sản phẩm mới</a>
                             </div>
-                            <div class="col-3 box-body"><a type="button" class="btn btn-info"
+                            {{-- <div class="col-3 box-body"><a type="button" class="btn btn-info"
                                     href="">Đặt thêm sản phẩm</a>
                             </div>
                             <div class="form-group col-sm-4 box-body">
@@ -41,10 +41,10 @@
                                 <select class="form-control select2" style="width: 100%;">
                                     <option selected="selected">Tất cả</option>
                                     @foreach ($dataCategory as $key => $val)
-                                        <option>{{ $val['name'] }}</option>
+                                        <a href=""><option>{{ $val['name'] }}</option></a>
                                     @endforeach
                                 </select>
-                            </div>
+                            </div> --}}
                             <!-- /.box-header -->
                             <div class="box-body">
                                 <table id="example1" class="table table-bordered table-striped">
@@ -74,7 +74,7 @@
                                                     <td>
                                                         <a href="{{route('product.show',$val->id)}}" type="button" class="btn btn-info">Xem</a>
                                                         <a href="{{route('product.edit',$val->id)}}" type="button" class="btn btn-warning">Sửa</a>
-                                                        <button type="button" class="btn btn-danger">Xóa</button>
+                                                        <a href="{{route('productDestroy',$val->id)}}" onclick="if(confirm('Bạn có chắc không?'))return true;else return false;" type="button" class="btn btn-danger">Xóa</a>
                                                     </td>
                                                 </tr>
                                             @endforeach

@@ -38,7 +38,7 @@
                                 @foreach ($dataPc as $key => $val)
                                     <div class="col-md-3 m-wthree">
                                         <div class="col-m">
-                                            <a href="#" data-toggle="modal" data-target="#myModal1" class="offer-img">
+                                            <a href="#" data-toggle="modal" data-target="#model{{$val['id']}}" class="offer-img">
                                                 <img src="{{ asset($val['image']) }}" class="img-responsive" alt="">
                                                 <div class="offer">
                                                     <p><span>Offer</span></p>
@@ -51,8 +51,15 @@
                                                         GHz</h6>
                                                 </div>
                                                 <div class="mid-2">
-                                                    <p><label>{{ $val['price'] }}</label><em
-                                                            class="item_price">{{ $val['sale'] }}</em></p>
+                                                    <p><label>@if($val['sale'] == 0)
+                                                        @else
+                                                        {{ $val['price'] }}
+                                                    @endif</label><em
+                                                            class="item_price">@if($val['sale'] == 0)
+                                                        {{$val['price']}}
+                                                    @else
+                                                        {{$val['sale']}}
+                                                    @endif</em></p>
                                                     <div class="block">
                                                         <div class="starbox small ghosting"> </div>
                                                     </div>
@@ -77,7 +84,7 @@
                                 @foreach ($dataGear as $key => $val)
                                     <div class="col-md-3 m-wthree">
                                         <div class="col-m">
-                                            <a href="#" data-toggle="modal" data-target="#myModal1" class="offer-img">
+                                            <a href="#" data-toggle="modal" data-target="#model{{$val['id']}}" class="offer-img">
                                                 <img src="{{ asset($val['image']) }}" class="img-responsive"
                                                     alt="">
                                                 <div class="offer">
@@ -91,8 +98,15 @@
                                                         GHz</h6>
                                                 </div>
                                                 <div class="mid-2">
-                                                    <p><label>{{ $val['price'] }}</label><em
-                                                            class="item_price">{{ $val['sale'] }}</em></p>
+                                                    <p><label>@if($val['sale'] == 0)
+                                                        @else
+                                                        {{ $val['price'] }}
+                                                    @endif</label><em
+                                                            class="item_price">@if($val['sale'] == 0)
+                                                        {{$val['price']}}
+                                                    @else
+                                                        {{$val['sale']}}
+                                                    @endif</em></p>
                                                     <div class="block">
                                                         <div class="starbox small ghosting"> </div>
                                                     </div>
@@ -117,7 +131,7 @@
                                 @foreach ($dataCs as $key => $val)
                                     <div class="col-md-3 m-wthree">
                                         <div class="col-m">
-                                            <a href="#" data-toggle="modal" data-target="#myModal1"
+                                            <a href="#" data-toggle="modal" data-target="#model{{$val['id']}}"
                                                 class="offer-img">
                                                 <img src="{{ asset($val['image']) }}" class="img-responsive"
                                                     alt="">
@@ -132,8 +146,15 @@
                                                         6.00 GHz</h6>
                                                 </div>
                                                 <div class="mid-2">
-                                                    <p><label>{{ $val['price'] }}</label><em
-                                                            class="item_price">{{ $val['sale'] }}</em></p>
+                                                    <p><label>@if($val['sale'] == 0)
+                                                        @else
+                                                        {{ $val['price'] }}
+                                                    @endif</label><em
+                                                            class="item_price">@if($val['sale'] == 0)
+                                                        {{$val['price']}}
+                                                    @else
+                                                        {{$val['sale']}}
+                                                    @endif</em></p>
                                                     <div class="block">
                                                         <div class="starbox small ghosting"> </div>
                                                     </div>
@@ -264,3 +285,4 @@
         </div>
     </div>
 @endsection
+@include('user.layout.detail_product')

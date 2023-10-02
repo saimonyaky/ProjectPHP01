@@ -5,7 +5,7 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Admin System
+          Quản lí bán hàng
         </h1>
       </section>
 

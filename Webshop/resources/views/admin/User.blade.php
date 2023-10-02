@@ -32,7 +32,6 @@
                     <th style="width: 15px">STT</th>
                     <th>Tên người dùng</th>
                     <th>email</th>
-                    <th style="width: 200px">Tác vụ</th>
                   </tr>
                   </thead>
                   <tbody>
@@ -42,11 +41,6 @@
                       <td>{{$key+1}}</td>
                       <td>{{$val['name']}}</td>
                       <td>{{$val['email']}}</td>
-                      <td>
-                        <button type="button" class="btn btn-info">Xem</button>
-                        <button type="button" class="btn btn-warning">Sửa</button>
-                        <button type="button" class="btn btn-danger">Xóa</button>
-                      </td>
                     </tr>
                     @endforeach
                     @else

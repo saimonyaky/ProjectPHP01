@@ -11,11 +11,12 @@ class HomeController extends Controller
 {    
     function index()
     {
+        $data = Product::all();
         $dataPc = Product::all()->where('category_id',68)->take(4);
         $dataGear = Product::all()->where('category_id',69)->take(4);
         $dataCs = Product::all()->where('category_id',67)->take(4);
         $dataTop = Product::all()->take(8);
-        return view('user.index',compact('dataTop','dataPc','dataGear','dataCs'));
+        return view('user.index',compact('data','dataTop','dataPc','dataGear','dataCs'));
     }
     function gaminggear()
     {
@@ -25,7 +26,8 @@ class HomeController extends Controller
     }
     function contact()
     {
-        return view('user.contact');
+        $data = Product::all();
+        return view('user.contact',compact('data'));
     }
     function pccomponent()
     {
@@ -41,26 +43,32 @@ class HomeController extends Controller
     }
     function about()
     {
-        return view('user.about');
+        $data = Product::all();
+        return view('user.about',compact('data'));
     }
     function offer()
     {
-        return view('user.offer');
+        $data = Product::all();
+        return view('user.offer',compact('data'));
     }
     function faqs()
     {
-        return view('user.faqs');
+        $data = Product::all();
+        return view('user.faqs',compact('data'));
     }
     function single_gaminggear()
     {
-        return view('user.single_gaminggear');
+        $data = Product::all();
+        return view('user.single_gaminggear',compact('data'));
     }
     function single_pc()
     {
-        return view('user.single_pc');
+        $data = Product::all();
+        return view('user.single_pc',compact('data'));
     }
     function single()
     {
-        return view('user.single');
+        $data = Product::all();
+        return view('user.single',compact('data'));
     }
 }
