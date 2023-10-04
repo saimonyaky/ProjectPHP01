@@ -56,19 +56,9 @@ class HomeController extends Controller
         $data = Product::all();
         return view('user.faqs',compact('data'));
     }
-    function single_gaminggear()
+    function single($id)
     {
-        $data = Product::all();
-        return view('user.single_gaminggear',compact('data'));
-    }
-    function single_pc()
-    {
-        $data = Product::all();
-        return view('user.single_pc',compact('data'));
-    }
-    function single()
-    {
-        $data = Product::all();
-        return view('user.single',compact('data'));
+        $product = Product::find($id);
+        return view('user.single',compact('product'));
     }
 }

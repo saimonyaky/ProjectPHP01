@@ -12,11 +12,11 @@
         </div>
         @foreach($dataTop as $key=>$val)
 		<div class="col-md-4 kic-top1">
-			<a href="{{route('single_pc')}}">
+			<a href="{{route('single',$val->id)}}">
 				<img src="{{asset($val['image'])}}" class="img-responsive" alt="" style="width: 200px">
 			</a>
 			<h6>{{$val['name']}}</h6>
-			<p>{{$val['sale']}}</p>
+			<p>@if($val['sale'] > 0){{ $val['sale'] }}@else{{$val['price']}}@endif VND</p>
 		</div>
 		@endforeach
     </div>
@@ -42,10 +42,19 @@
 							</a>
 							<div class="mid-1">
 								<div class="women">
-									<h6><a href="{{route('single')}}">{{$val['name']}}</a></h6>							
+									<h6><a href="{{route('single',$val->id)}}">{{$val['name']}}</a></h6>							
 								</div>
 								<div class="mid-2">
-									<p ><label>{{$val['price']}}</label><em class="item_price">{{$val['sale']}}</em></p>
+									<p >@if ($val['sale'] != 0)
+										<label>{{ $val['price'] }}</label>
+									@endif
+									<em class="item_price">
+										@if ($val['sale'] == 0)
+											{{ $val['price'] }}
+										@else
+											{{ $val['sale'] }}
+										@endif
+									</em></p>
 									  <div class="block">
 										<div class="starbox small ghosting"> </div>
 									</div>

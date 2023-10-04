@@ -5,7 +5,7 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Quản lí bán hàng
+          Giới thiệu
         </h1>
       </section>
 
@@ -14,24 +14,12 @@
         <div class="callout callout-info">
           <h4>Tip!</h4>
 
-          <p>Add the layout-top-nav class to the body tag to get this layout. This feature can also be used with a
-            sidebar! So use this class if you want to remove the custom dropdown menus from the navbar and use regular
-            links instead.</p>
+          <p>Đây là trang dành cho tài khoản admin </p>
         </div>
         <div class="callout callout-danger">
-          <h4>Warning!</h4>
+          <h4>Cảnh báo!</h4>
 
-          <p>The construction of this layout differs from the normal one. In other words, the HTML markup of the navbar
-            and the content will slightly differ than that of the normal layout.</p>
-        </div>
-        <div class="box box-default">
-          <div class="box-header with-border">
-            <h3 class="box-title">Blank Box</h3>
-          </div>
-          <div class="box-body">
-            The great content goes here
-          </div>
-          <!-- /.box-body -->
+          <p>Mọi tác động của bạn sẽ ảnh hưởng trực tiếp đến database</p>
         </div>
         <!-- /.box -->
       </section>

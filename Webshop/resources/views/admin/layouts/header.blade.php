@@ -11,10 +11,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="{{route('category.index')}}">Category</a></li>
-            <li><a href="{{route('product.index')}}">Product</a></li>
-            <li><a href="{{route('user.index')}}">User</a></li>
-            <li><a href="">Order</a></li>
+            <li><a href="{{route('category.index')}}">Danh mục</a></li>
+            <li><a href="{{route('product.index')}}">Sản phẩm</a></li>
+            <li><a href="{{route('user.index')}}">Tài khoản</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -28,9 +27,7 @@
               <!-- Menu Toggle Button -->
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <!-- The user image in the navbar-->
-                <img src="{{url('')}}/admin/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                <span class="hidden-xs">Alexander Pierce</span>
+                <span class="hidden-xs">admin</span>
               </a>
               <ul class="dropdown-menu">
                 <!-- The user image in the menu -->
@@ -38,7 +35,7 @@
                   <img src="admin/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                   <p>
-                    Quản lí bán hàng
+                    Admin
                   </p>
                 </li>
                 <!-- Menu Body -->

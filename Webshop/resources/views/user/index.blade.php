@@ -6,7 +6,7 @@
             <div class="banner-info">
                 <h3>A Trusted Place For Technology Enthusiasts</h3>
                 <div class="search-form">
-                    <form action="#" method="post">
+                    <form action="#" method="get">
                         <input type="text" placeholder="Search..." name="Search...">
                         <input type="submit" value=" ">
                     </form>
@@ -38,7 +38,8 @@
                                 @foreach ($dataPc as $key => $val)
                                     <div class="col-md-3 m-wthree">
                                         <div class="col-m">
-                                            <a href="#" data-toggle="modal" data-target="#model{{$val['id']}}" class="offer-img">
+                                            <a href="#" data-toggle="modal" data-target="#model{{ $val['id'] }}"
+                                                class="offer-img">
                                                 <img src="{{ asset($val['image']) }}" class="img-responsive" alt="">
                                                 <div class="offer">
                                                     <p><span>Offer</span></p>
@@ -46,20 +47,24 @@
                                             </a>
                                             <div class="mid-1">
                                                 <div class="women">
-                                                    <h6><a href="single.html">{{ $val['name'] }}</a>| 36M Cache, up
+                                                    <h6><a href="{{ route('single', $val->id) }}">{{ $val['name'] }}</a>|
+                                                        36M Cache, up
                                                         to 6.00
                                                         GHz</h6>
                                                 </div>
                                                 <div class="mid-2">
-                                                    <p><label>@if($val['sale'] == 0)
-                                                        @else
-                                                        {{ $val['price'] }}
-                                                    @endif</label><em
-                                                            class="item_price">@if($val['sale'] == 0)
-                                                        {{$val['price']}}
-                                                    @else
-                                                        {{$val['sale']}}
-                                                    @endif</em></p>
+                                                    <p>
+                                                        @if ($val['sale'] != 0)
+                                                            <label>{{ $val['price'] }}</label>
+                                                        @endif
+                                                        <em class="item_price">
+                                                            @if ($val['sale'] == 0)
+                                                                {{ $val['price'] }}
+                                                            @else
+                                                                {{ $val['sale'] }}
+                                                            @endif
+                                                        </em>
+                                                    </p>
                                                     <div class="block">
                                                         <div class="starbox small ghosting"> </div>
                                                     </div>
@@ -68,7 +73,8 @@
                                                 <div class="add">
                                                     <button class="btn btn-danger my-cart-btn my-cart-b "
                                                         data-id="{{ $val['id'] }}" data-name="{{ $val['name'] }}"
-                                                        data-summary="summary 1" data-price="{{ $val['sale'] }}"
+                                                        data-summary="summary 1"
+                                                        @if ($val['sale'] == 0) data-price="{{ $val['price'] }}"@else data-price="{{ $val['sale'] }}" @endif
                                                         data-quantity="1" data-image="{{ $val['image'] }}">Add to
                                                         Cart</button>
                                                 </div>
@@ -84,7 +90,8 @@
                                 @foreach ($dataGear as $key => $val)
                                     <div class="col-md-3 m-wthree">
                                         <div class="col-m">
-                                            <a href="#" data-toggle="modal" data-target="#model{{$val['id']}}" class="offer-img">
+                                            <a href="#" data-toggle="modal" data-target="#model{{ $val['id'] }}"
+                                                class="offer-img">
                                                 <img src="{{ asset($val['image']) }}" class="img-responsive"
                                                     alt="">
                                                 <div class="offer">
@@ -93,20 +100,24 @@
                                             </a>
                                             <div class="mid-1">
                                                 <div class="women">
-                                                    <h6><a href="single.html">{{ $val['name'] }}</a>| 36M Cache,
+                                                    <h6><a href="{{ route('single', $val->id) }}">{{ $val['name'] }}</a>|
+                                                        36M Cache,
                                                         up to 6.00
                                                         GHz</h6>
                                                 </div>
                                                 <div class="mid-2">
-                                                    <p><label>@if($val['sale'] == 0)
-                                                        @else
-                                                        {{ $val['price'] }}
-                                                    @endif</label><em
-                                                            class="item_price">@if($val['sale'] == 0)
-                                                        {{$val['price']}}
-                                                    @else
-                                                        {{$val['sale']}}
-                                                    @endif</em></p>
+                                                    <p>
+                                                        @if ($val['sale'] != 0)
+                                                            <label>{{ $val['price'] }}</label>
+                                                        @endif
+                                                        <em class="item_price">
+                                                            @if ($val['sale'] == 0)
+                                                                {{ $val['price'] }}
+                                                            @else
+                                                                {{ $val['sale'] }}
+                                                            @endif
+                                                        </em>
+                                                    </p>
                                                     <div class="block">
                                                         <div class="starbox small ghosting"> </div>
                                                     </div>
@@ -115,7 +126,8 @@
                                                 <div class="add">
                                                     <button class="btn btn-danger my-cart-btn my-cart-b "
                                                         data-id="{{ $val['id'] }}" data-name="{{ $val['name'] }}"
-                                                        data-summary="summary 1" data-price="{{ $val['sale'] }}"
+                                                        data-summary="summary 1"
+                                                        @if ($val['sale'] == 0) data-price="{{ $val['price'] }}"@else data-price="{{ $val['sale'] }}" @endif
                                                         data-quantity="1" data-image="{{ $val['image'] }}">Add to
                                                         Cart</button>
                                                 </div>
@@ -131,7 +143,7 @@
                                 @foreach ($dataCs as $key => $val)
                                     <div class="col-md-3 m-wthree">
                                         <div class="col-m">
-                                            <a href="#" data-toggle="modal" data-target="#model{{$val['id']}}"
+                                            <a href="#" data-toggle="modal" data-target="#model{{ $val['id'] }}"
                                                 class="offer-img">
                                                 <img src="{{ asset($val['image']) }}" class="img-responsive"
                                                     alt="">
@@ -141,20 +153,25 @@
                                             </a>
                                             <div class="mid-1">
                                                 <div class="women">
-                                                    <h6><a href="single.html">{{ $val['name'] }}</a>| 36M Cache,
+                                                    <h6><a
+                                                            href="{{ route('single', $val->id) }}">{{ $val['name'] }}</a>|
+                                                        36M Cache,
                                                         up to
                                                         6.00 GHz</h6>
                                                 </div>
                                                 <div class="mid-2">
-                                                    <p><label>@if($val['sale'] == 0)
-                                                        @else
-                                                        {{ $val['price'] }}
-                                                    @endif</label><em
-                                                            class="item_price">@if($val['sale'] == 0)
-                                                        {{$val['price']}}
-                                                    @else
-                                                        {{$val['sale']}}
-                                                    @endif</em></p>
+                                                    <p>
+                                                        @if ($val['sale'] != 0)
+                                                            <label>{{ $val['price'] }}</label>
+                                                        @endif
+                                                        <em class="item_price">
+                                                            @if ($val['sale'] == 0)
+                                                                {{ $val['price'] }}
+                                                            @else
+                                                                {{ $val['sale'] }}
+                                                            @endif
+                                                        </em>
+                                                    </p>
                                                     <div class="block">
                                                         <div class="starbox small ghosting"> </div>
                                                     </div>
@@ -163,7 +180,8 @@
                                                 <div class="add">
                                                     <button class="btn btn-danger my-cart-btn my-cart-b "
                                                         data-id="{{ $val['id'] }}" data-name="{{ $val['name'] }}"
-                                                        data-summary="summary 1" data-price="{{ $val['sale'] }}"
+                                                        data-summary="summary 1"
+                                                        @if ($val['sale'] == 0) data-price="{{ $val['price'] }}"@else data-price="{{ $val['sale'] }}" @endif
                                                         data-quantity="1" data-image="{{ $val['image'] }}">Add to
                                                         Cart</button>
                                                 </div>
@@ -237,7 +255,7 @@
     </div>
     <!--content-->
     <!-- Carousel
-                ================================================== -->
+                                        ================================================== -->
     @include('user.layout.carousel')
 
     <!--content-->
@@ -255,7 +273,8 @@
                 @foreach ($dataTop as $key => $val)
                     <div class="col-md-3 pro-1">
                         <div class="col-m">
-                            <a href="#" data-toggle="modal" data-target="#myModal17" class="offer-img">
+                            <a href="#" data-toggle="modal" data-target="#model{{ $val['id'] }}"
+                                class="offer-img">
                                 <img src="{{ asset($val['image']) }}" class="img-responsive" alt="">
                             </a>
                             <div class="mid-1">
@@ -263,7 +282,16 @@
                                     <h6>{{ $val['name'] }}</h6>
                                 </div>
                                 <div class="mid-2">
-                                    <p><label>{{ $val['price'] }}</label><em class="item_price">{{ $val['sale'] }}</em>
+                                    <p>@if ($val['sale'] != 0)
+                                        <label>{{ $val['price'] }}</label>
+                                    @endif
+                                    <em class="item_price">
+                                        @if ($val['sale'] == 0)
+                                            {{ $val['price'] }}
+                                        @else
+                                            {{ $val['sale'] }}
+                                        @endif
+                                    </em>
                                     </p>
                                     <div class="block">
                                         <div class="starbox small ghosting"> </div>
@@ -271,10 +299,10 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="add add-2">
-                                    <button class="btn btn-danger my-cart-btn my-cart-b" data-id="{{$val['id']}}"
+                                    <button class="btn btn-danger my-cart-btn my-cart-b" data-id="{{ $val['id'] }}"
                                         data-name="{{ $val['name'] }}" data-summary="summary 5"
-                                        data-price="{{ $val['sale'] }}" data-quantity="1"
-                                        data-image="{{ $val['image'] }}">Add to Cart</button>
+                                        @if ($val['sale'] == 0) data-price="{{ $val['price'] }}"@else data-price="{{ $val['sale'] }}" @endif
+                                        data-quantity="1" data-image="{{ $val['image'] }}">Add to Cart</button>
                                 </div>
                             </div>
                         </div>

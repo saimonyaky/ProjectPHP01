@@ -40,8 +40,6 @@ Route::prefix('/')->group(function () {
     Route::get('about', 'User\HomeController@about')->name('about');
     Route::get('terms', 'User\HomeController@terms')->name('terms');
     Route::get('offer', 'User\HomeController@offer')->name('offer');
-    Route::get('single-gaming-gear', 'User\HomeController@single_gaminggear')->name('single_gaminggear');
-    Route::get('single-pc', 'User\HomeController@single_pc')->name('single_pc');
-    Route::get('single', 'User\HomeController@single')->name('single');
+    Route::get('single/{id}', 'User\HomeController@single')->name('single');
     Route::get('faqs', 'User\HomeController@faqs')->name('faqs');
     });
