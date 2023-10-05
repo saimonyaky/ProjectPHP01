@@ -15,7 +15,7 @@
                     <a href="{{ route('single',$val->id) }}">
                         <img src="{{ asset($val['image']) }}" class="img-responsive" alt="" style="width: 200px">
                     </a>
-                    <h6>{{ $val['name'] }}</h6>
+                    <h6>{{ $val['name'] }} | {{$val['summary']}}</h6>
                     <p>@if($val['sale'] > 0){{ $val['sale'] }}@else{{$val['price']}}@endif VND</p>
                 </div>
             @endforeach
@@ -56,6 +56,7 @@
                                             @else
                                                 {{ $val['sale'] }}
                                             @endif
+                                            VND
                                         </em>
                                     </p>
                                     <div class="block">

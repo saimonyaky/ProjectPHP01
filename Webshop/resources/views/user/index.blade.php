@@ -37,7 +37,7 @@
                             <div class=" con-w3l">
                                 @foreach ($dataPc as $key => $val)
                                     <div class="col-md-3 m-wthree">
-                                        <div class="col-m">
+                                        <div class="col-m" style="height: 385px">
                                             <a href="#" data-toggle="modal" data-target="#model{{ $val['id'] }}"
                                                 class="offer-img">
                                                 <img src="{{ asset($val['image']) }}" class="img-responsive" alt="">
@@ -47,10 +47,7 @@
                                             </a>
                                             <div class="mid-1">
                                                 <div class="women">
-                                                    <h6><a href="{{ route('single', $val->id) }}">{{ $val['name'] }}</a>|
-                                                        36M Cache, up
-                                                        to 6.00
-                                                        GHz</h6>
+                                                    <h6><a href="{{ route('single', $val->id) }}">{{ $val['name'] }}</a> | {{$val['summary']}}</h6>
                                                 </div>
                                                 <div class="mid-2">
                                                     <p>
@@ -63,6 +60,7 @@
                                                             @else
                                                                 {{ $val['sale'] }}
                                                             @endif
+                                                            VND
                                                         </em>
                                                     </p>
                                                     <div class="block">
@@ -89,7 +87,7 @@
                             <div class=" con-w3l">
                                 @foreach ($dataGear as $key => $val)
                                     <div class="col-md-3 m-wthree">
-                                        <div class="col-m">
+                                        <div class="col-m" style="height: 385px">
                                             <a href="#" data-toggle="modal" data-target="#model{{ $val['id'] }}"
                                                 class="offer-img">
                                                 <img src="{{ asset($val['image']) }}" class="img-responsive"
@@ -100,10 +98,7 @@
                                             </a>
                                             <div class="mid-1">
                                                 <div class="women">
-                                                    <h6><a href="{{ route('single', $val->id) }}">{{ $val['name'] }}</a>|
-                                                        36M Cache,
-                                                        up to 6.00
-                                                        GHz</h6>
+                                                    <h6><a href="{{ route('single', $val->id) }}">{{ $val['name'] }}</a> | {{$val['summary']}}</h6>
                                                 </div>
                                                 <div class="mid-2">
                                                     <p>
@@ -116,6 +111,7 @@
                                                             @else
                                                                 {{ $val['sale'] }}
                                                             @endif
+                                                            VND
                                                         </em>
                                                     </p>
                                                     <div class="block">
@@ -142,7 +138,7 @@
                             <div class=" con-w3l">
                                 @foreach ($dataCs as $key => $val)
                                     <div class="col-md-3 m-wthree">
-                                        <div class="col-m">
+                                        <div class="col-m" style="height: 385px">
                                             <a href="#" data-toggle="modal" data-target="#model{{ $val['id'] }}"
                                                 class="offer-img">
                                                 <img src="{{ asset($val['image']) }}" class="img-responsive"
@@ -154,10 +150,7 @@
                                             <div class="mid-1">
                                                 <div class="women">
                                                     <h6><a
-                                                            href="{{ route('single', $val->id) }}">{{ $val['name'] }}</a>|
-                                                        36M Cache,
-                                                        up to
-                                                        6.00 GHz</h6>
+                                                            href="{{ route('single', $val->id) }}">{{ $val['name'] }}</a> | {{$val['summary']}}</h6>
                                                 </div>
                                                 <div class="mid-2">
                                                     <p>
@@ -170,6 +163,7 @@
                                                             @else
                                                                 {{ $val['sale'] }}
                                                             @endif
+                                                            VND
                                                         </em>
                                                     </p>
                                                     <div class="block">
@@ -272,7 +266,7 @@
             <div class=" con-w3l">
                 @foreach ($dataTop as $key => $val)
                     <div class="col-md-3 pro-1">
-                        <div class="col-m">
+                        <div class="col-m" style="height: 320px">
                             <a href="#" data-toggle="modal" data-target="#model{{ $val['id'] }}"
                                 class="offer-img">
                                 <img src="{{ asset($val['image']) }}" class="img-responsive" alt="">
@@ -291,6 +285,7 @@
                                         @else
                                             {{ $val['sale'] }}
                                         @endif
+                                        VND
                                     </em>
                                     </p>
                                     <div class="block">

@@ -48,8 +48,11 @@ class HomeController extends Controller
     }
     function offer()
     {
+        $dataPc = Product::all()->where('category_id',68)->take(4);
+        $dataGear = Product::all()->where('category_id',69)->take(4);
+        $dataCs = Product::all()->where('category_id',67)->take(4);
         $data = Product::all();
-        return view('user.offer',compact('data'));
+        return view('user.offer',compact('data','dataPc','dataGear','dataCs'));
     }
     function faqs()
     {

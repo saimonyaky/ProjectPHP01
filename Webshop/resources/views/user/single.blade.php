@@ -47,7 +47,8 @@
                             <div class="starbox small ghosting"> </div>
                         </div>
                         <p class="in-pa">
-                            {{ $product->name }}<br>
+                            {{ $product->name }} | {{$product->summary}}<br>
+                            {{ $product->description }}
                         </p>
 
                         <ul class="social-top">
